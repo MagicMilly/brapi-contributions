@@ -1,6 +1,14 @@
 # macOS
 .DS_Store
 
+# exclude data from source control by default, except for interim - needed to run notebook
+/data/*
+!/data/interim
+
+# vim
+*.swp
+*.swo
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
